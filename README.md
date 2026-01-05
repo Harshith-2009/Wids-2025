@@ -1,4 +1,4 @@
-**California Housing Price Prediction — Project Overview**
+**California Housing Price Prediction — assignment 2**
 
 This project predicts the **median house value** for California districts using a clear and sequential machine learning workflow.
 
