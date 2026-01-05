@@ -1,23 +1,40 @@
-# California Housing Price Prediction
+**California Housing Price Prediction — Project Overview**
 
-This project predicts the **median house value** in California districts using the California Housing dataset.
+This project predicts the **median house value** for California districts using a clear and sequential machine learning workflow.
 
-**Dataset** — 20,640 rows, 10 columns (income, rooms, population, age, location, etc.).
-Target column: `median_house_value`.
+**1. Dataset Loading**
+The dataset is taken from the Hands-On Machine Learning repository and loaded using pandas. It contains **20,640 rows and 10 features**. The target variable is **median_house_value**.
 
-**Pipeline (Overview)**
+**2. Data Understanding and Exploratory Analysis**
+The first few rows and summary statistics were inspected. **Histograms were plotted** to study distributions, identify skewness, and understand feature behavior.
 
-1. Load dataset using pandas
-2. Basic EDA + histograms
-3. Handle missing values
-4. Encode `ocean_proximity`
-5. Train models — Linear Regression & Random Forest
-6. Evaluate using MSE, MAE, R²
+**3. Data Cleaning**
+Missing values were handled or removed. Only meaningful numeric and categorical features were retained to ensure a reliable learning pipeline.
 
-**Results (current run)**
-MSE ≈ 5.77e9 | MAE ≈ 55.8k | R² ≈ 0.57
+**4. Feature Processing**
+The categorical column **ocean_proximity** was encoded. The feature matrix (X) and target (y) were prepared and **split into training and testing sets**.
 
-**Notes** — Model works but can be improved using
-feature engineering, scaling, cross-validation, and tuning.
+**5. Model Training**
+Two models were developed and compared:
 
-Run using Jupyter / Colab or Python scripts from repo.
+* **Linear Regression**
+* **Random Forest Regressor**
+
+Models were trained on the training split and predictions were generated on the test split.
+
+**6. Evaluation Metrics**
+Performance was measured using:
+
+* **Mean Squared Error (MSE)**
+* **Mean Absolute Error (MAE)**
+* **R Squared (R²) and Adjusted R²**
+
+The current R² value is **approximately 0.57**, indicating moderate predictive performance.
+
+**7. Outcome and Scope for Improvement**
+The project successfully demonstrates a **structured supervised learning pipeline**. Results can be improved through:
+
+* feature engineering
+* scaling and transformations
+* cross-validation
+* hyperparameter tuning
