@@ -1,4 +1,4 @@
-Project Name : Study of Models
+Project Name : Study of Models.
 UID : 1
 
 **California Housing Price Prediction — Mid term report**
