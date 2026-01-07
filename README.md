@@ -1,4 +1,7 @@
-**California Housing Price Prediction — assignment 2**
+Project Name : Study of Models
+UID : 1
+
+**California Housing Price Prediction — Mid term report**
 
 This project predicts the **median house value** for California districts using a clear and sequential machine learning workflow.
 
